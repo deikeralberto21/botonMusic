@@ -1,0 +1,33 @@
+
+.boton_music{
+    position: relative;
+    cursor: pointer;
+    background-color: #12051a;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.boton_music::before{
+    content: "";
+    position: absolute;
+    background-color: #071bdf;
+    width: 100%;
+    height: 0;
+    transition: 0.3s;
+}
+
+.boton_music:hover::before{
+    height: 100%;
+    background-color: #071bdf;
+}
+
+.loader-container{
+    width: 100px;
+    position: relative;
+}
